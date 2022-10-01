@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
 
-const connection = mongoose.connect(process.env.mongo_url)
+const connection = mongoose.connect("mongodb+srv://ashwini_mishra:8252672662@cluster0.izr7bmg.mongodb.net/Eval-4?retryWrites=true&w=majority")
 
 module.exports = connection

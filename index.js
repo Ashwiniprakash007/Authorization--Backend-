@@ -19,7 +19,7 @@ app.use("/user", userController)
 app.use(authentication)
 app.use("/todos", todosController)
 
-app.listen(process.env.PORT, async () => {
+app.listen(8080, async () => {
     try{
         await connection
         console.log("DB connected")
@@ -28,5 +28,5 @@ app.listen(process.env.PORT, async () => {
         console.log("error occur")
         console.log(err)
     }
-    console.log(`listening on port ${process.env.PORT}`)
+    console.log("listening on port" )
 })
